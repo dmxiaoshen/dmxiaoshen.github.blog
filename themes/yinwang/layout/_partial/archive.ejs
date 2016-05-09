@@ -1,0 +1,71 @@
+<% if (pagination==2){  %>
+
+<%- partial('_partial/nav')%>
+<div class="container" style="padding: 0 15px;">
+<div class="row" style="padding-top: 70px">
+    <div class="container center-block">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Blog</h3>
+                </div>
+                <ul class="list-group">
+                    <% if (pagination == 2){ %>
+                    <% page.posts.each(function(post){ %>
+		    
+		    <% post.categories.each(function(cat){  %>
+		       <% if(cat.name==theme.blog){ %>
+				 <%- partial('article', {post: post, index: true}) %>
+			  <% }  %>
+			
+		       <% })  %>
+
+                    <% }) %>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+        </div>
+
+    </div>
+</div>
+</div>
+<% } else {  %>
+
+<%- partial('_partial/nav')%>
+<div class="container" style="padding: 0 15px;">
+<div class="row" style="padding-top: 70px">
+    <div class="container center-block">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Note</h3>
+                </div>
+                <ul class="list-group">
+                    <% if (pagination != 2){ %>
+                    <% page.posts.each(function(post){ %>
+		       <% post.categories.each(function(cat){  %>
+		       <% if(cat.name==theme.note){ %>
+				 <%- partial('article', {post: post, index: true}) %>
+			  <% }  %>
+			
+		       <% })  %>
+                   
+
+                    <% }) %>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+        </div>
+
+    </div>
+</div>
+</div>
+<% }  %>

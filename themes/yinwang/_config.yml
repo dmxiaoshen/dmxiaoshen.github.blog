@@ -1,0 +1,33 @@
+# when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
+
+version: 2.0
+# Place your favicon.ico to /source directory.
+favicon: /favicon.ico
+
+# Set default keywords (Use a comma to separate)
+keywords: "桃花, 小深"
+
+# Code Highlight theme
+# Available value: normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: night
+
+
+menu:
+  Blog: /
+  #categories: /categories
+  Note: /archives
+  #tags: /tags
+  #GitHub: https:github.com/mickeyouyou
+  #About: /about
+
+
+
+# Static files
+#vendors: vendors
+css: css
+js: js
+#images: images
+
+blog: blog
+note: note
