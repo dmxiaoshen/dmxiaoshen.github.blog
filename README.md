@@ -1,2 +1,3 @@
 # dmxiaoshen.github.blog
-read
+
+[博客地址](http://www.dmxiaoshen.com)
