@@ -91,20 +91,19 @@ h6 ###### 六级标题
 
 ### 其他  
 
-```
- [toc] 显示目录
 
- 脚注：  
- Hello[^hello]  
+>  [toc] 显示目录
 
- [^hello]: 这是一个脚注
+>  脚注：  
+>  Hello[^hello]  
 
- 文内跳转:  
- [点击跳转](#jump)  
+>  [^hello]: 这是一个脚注
 
- <span id="jump">跳转到这里</span>
+>  文内跳转:  
+>  [点击跳转](#jump)  
 
-``` 
+>  <span id="jump">跳转到这里</span>
+
 
 [回到文首](#jump)
 
