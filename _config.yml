@@ -69,5 +69,5 @@ theme: yinwang
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:dmxiaoshen/dmxiaoshen.github.io.git
+  repo: https://github.com/dmxiaoshen/dmxiaoshen.github.io.git
   branch: master
